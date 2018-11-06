@@ -1,0 +1,12 @@
+.contact-section {
+  width: 1200px;
+  height: 867px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  background-image: url(../images/contachbg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }

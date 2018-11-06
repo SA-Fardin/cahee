@@ -1,0 +1,110 @@
+.service-section {
+    width: 1200px;
+    height: 790px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-image: url(../images/servicebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__details {
+    	display: inline-block;
+    	margin-top: 120px;
+    }
+    &__details-first-box {
+    	width: 500px;
+    	height: 97px;
+    	position: relative;
+    	background: url(../images/shopingicon.png) #ffffff;
+    	background-size: content;
+    	background-repeat: no-repeat;
+    	background-position: 93%;
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 79%;
+    		width: 1px;
+    		background-color: #262626;
+    	}
+    }
+    &__details-second-box {
+    	width: 500px;
+    	height: 97px;
+    	position: relative;
+    	background: url(../images/produckicon.png) #ffffff;
+    	background-size: content;
+    	background-repeat: no-repeat;
+    	background-position: 93%;
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 79%;
+    		width: 1px;
+    		background-color: #262626;
+    	}
+    }
+    &__details-third-box {
+    	width: 500px;
+    	height: 97px;
+    	position: relative;
+    	background: url(../images/delivericon.png) #ffffff;
+    	background-size: content;
+    	background-repeat: no-repeat;
+    	background-position: 93%;
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 79%;
+    		width: 1px;
+    		background-color: #262626;
+    	}
+    }
+    &__details-forth-box {
+    	width: 500px;
+    	height: 97px;
+    	position: relative;
+    	background: url(../images/wellicon.png) #ffffff;
+    	background-size: content;
+    	background-repeat: no-repeat;
+    	background-position: 93%;
+    	&::after {
+    		content: "";
+    		position: absolute;
+    		top: 0;
+    		bottom: 0;
+    		left: 79%;
+    		width: 1px;
+    		background-color: #262626;
+    	}
+    }
+    &__text {
+    	color: #262626;
+    	font-size: 20px;
+    	font-family: sans-serif;
+    	padding-top: 35px;
+    	margin-right: 100px;
+    	margin-left: 0;
+    	text-align: center;
+    	&:hover {
+    		color: #ff6033;
+    		cursor: pointer;
+    	}
+    }
+    &__heading-box {
+    	width: 500px;
+    	height: 96px;
+    	display: inline-block;
+    	transform: translate(50%, -220px);
+    }
+    &__heading-box-h-two {
+    	color: #ffffff;
+    	font-family: 'Raleway', sans-serif;
+    	font-size: 80px;
+    }
+}

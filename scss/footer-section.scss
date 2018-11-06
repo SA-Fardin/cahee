@@ -1,0 +1,42 @@
+.footer-section {
+    width: 1200px;
+    height: 90px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #262626;
+    &__flex-container {
+    	display: flex;
+    	justify-content: space-between;	
+    }
+    &__flex-container-copyright {
+    	width: 271px;
+    	height: 45px;
+    }
+    &__flex-container-logo {
+    	width: 45px;
+    	height: 45px;
+    }
+    &__flex-container-madewithlove {
+    	width: 271px;
+    	height: 45px;
+    }
+    &__paragraph {
+    	color: #4d4d4d;
+    	font-family: sans-serif;
+    	font-size: 16px;
+    }
+    &__text {
+       color: #4d4d4d;
+       font-family: sans-serif;
+       font-size: 16px;
+    }
+    &__img {
+    	width: 100%;
+    	margin-top: 15px;
+    }
+    &__span {
+    	color: #ff2b58;
+    	font-family: sans-serif;
+    	font-size: 16px;	
+    }
+}

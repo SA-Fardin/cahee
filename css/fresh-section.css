@@ -1,0 +1,12 @@
+.fresh-section {
+  width: 1200px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  height: 1000px;
+  background-image: url(../images/freshbg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }

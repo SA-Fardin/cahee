@@ -1,0 +1,25 @@
+.about-section {
+    width: 1200px;
+    height: 700px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-image: url(../images/aboutbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__details {
+    	width: 500px;
+    	transform: translate(700px, 100px);
+    }
+    &__details-h-two {
+    	color: #ffffff;
+    	font-family: 'Raleway', sans-serif;
+    	font-size: 90px;
+    	margin-bottom: 5px;
+    }
+    &__details-paragraph {
+    	color: #ffffff;
+    	font-family: sans-serif;
+    	font-size: 17px;
+    }
+}
