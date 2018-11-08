@@ -15,14 +15,15 @@
         flex-direction: column;
         margin-left: 30px;
     }
-    &__image {
+    &__div-for-image {
         display: flex;
         width: 100%;
         max-width: cacl(1200px - 540px);
         margin-right: 30px;
     }
     &__img-fruits {
-        width: 100%;
+        width: 100%; 
+        height: auto;
     }
     &__details-h-two {
     	color: #ffffff;

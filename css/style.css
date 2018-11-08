@@ -381,6 +381,9 @@ th {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 48px; }
+  .fresh-section__menu-logo {
+    width: 127px;
+    height: auto; }
   .fresh-section__menu-nav-link {
     color: #262626;
     font-size: 16px;
@@ -402,6 +405,7 @@ th {
     width: 370px;
     color: #262626;
     font-size: 17px;
+    line-height: 25px;
     font-family: 'ralewaylight';
     margin-bottom: 15px; }
   .fresh-section__details-button {
@@ -447,7 +451,7 @@ th {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 30px; }
-  .about-section__image {
+  .about-section__div-for-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -455,7 +459,8 @@ th {
     max-width: cacl(660px);
     margin-right: 30px; }
   .about-section__img-fruits {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .about-section__details-h-two {
     color: #ffffff;
     font-family: 'ralewaybold';
@@ -649,6 +654,7 @@ th {
     color: #262626;
     font-family: 'ralewaylight';
     font-size: 17px;
+    line-height: 25px;
     text-align: center; }
   .gallery-section__flex-container {
     display: -webkit-box;
@@ -835,18 +841,23 @@ th {
   .subscribe-section__ditails-h-two {
     color: #262626;
     font-size: 40px;
-    font-family: 'ralewaybold'; }
+    font-family: 'ralewaybold';
+    margin-bottom: 17px; }
   .subscribe-section__ditails-paragraph {
     color: #262626;
     font-size: 17px;
+    line-height: 25px;
+    margin-top: 17px;
     font-family: 'ralewaylight'; }
+  .subscribe-section__form {
+    margin-top: 15px;
+    margin-bottom: 17px; }
   .subscribe-section__email-input {
     width: 570px;
     height: 55px;
     color: #262626;
     font-family: 'ralewaylight';
     outline: none;
-    margin-top: 31px;
     padding-left: 15px;
     border: 1px solid #262626;
     margin-right: 15px; }
@@ -898,7 +909,7 @@ th {
   .blog-section__details-text {
     color: #ffffff;
     font-family: 'ralewaylight';
-    font-weight: light;
+    line-height: 25px;
     font-size: 17px;
     text-align: center; }
   .blog-section__flex-container {
@@ -1097,35 +1108,38 @@ th {
   background-size: cover;
   background-repeat: no-repeat; }
   .contact-section__details-title {
+    font-family: 'ralewaybold';
+    font-size: 90px;
+    color: #262626;
+    text-align: center;
     padding-top: 99px;
     margin: 0 auto;
     display: block; }
-  .contact-section__details-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 90px;
-    color: #262626;
-    text-align: center; }
   .contact-section__details-text {
     margin: 0 auto;
     width: 390px;
-    font-family: sans-serif;
+    font-family: 'ralewaylight';
+    line-height: 25px;
     font-size: 17px;
     color: #262626;
     text-align: center; }
   .contact-section__form {
     margin-top: 50px;
+    margin-bottom: 100px;
     margin-left: 70px;
     display: inline-block; }
   .contact-section__name-input {
-    width: 500px;
+    width: 400px;
     height: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #ffffff;
     background-color: #00c4c4;
     border: none;
+    border-left: 3px solid transform;
     outline: none;
     display: block;
+    padding-right: 15px;
     padding-left: 15px; }
     .contact-section__name-input::-webkit-input-placeholder {
       color: #ffffff; }
@@ -1135,20 +1149,21 @@ th {
       color: #ffffff; }
     .contact-section__name-input::placeholder {
       color: #ffffff; }
-    .contact-section__name-input:hover {
+    .contact-section__name-input:focus {
       border-left: 3px solid #355b82; }
   .contact-section__email-input {
-    width: 500px;
+    width: 400px;
     height: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #ffffff;
-    background-color: #00c4c4;
+    background-color: rgba(0, 196, 196, 0.5);
     border: none;
+    border-left: 3px solid transform;
     outline: none;
     display: block;
-    padding-left: 15px;
-    opacity: .5; }
+    padding-right: 15px;
+    padding-left: 15px; }
     .contact-section__email-input::-webkit-input-placeholder {
       color: #ffffff; }
     .contact-section__email-input:-ms-input-placeholder {
@@ -1157,20 +1172,21 @@ th {
       color: #ffffff; }
     .contact-section__email-input::placeholder {
       color: #ffffff; }
-    .contact-section__email-input:hover {
+    .contact-section__email-input:focus {
       border-left: 3px solid #355b82; }
   .contact-section__number-input {
-    width: 500px;
+    width: 400px;
     height: 50px;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #ffffff;
-    background-color: #00c4c4;
+    background-color: rgba(0, 196, 196, 0.5);
     border: none;
+    border-left: 3px solid transform;
     outline: none;
     display: block;
-    padding-left: 15px;
-    opacity: .5; }
+    padding-right: 15px;
+    padding-left: 15px; }
     .contact-section__number-input::-webkit-input-placeholder {
       color: #ffffff; }
     .contact-section__number-input:-ms-input-placeholder {
@@ -1179,22 +1195,25 @@ th {
       color: #ffffff; }
     .contact-section__number-input::placeholder {
       color: #ffffff; }
-    .contact-section__number-input:hover {
+    .contact-section__number-input:focus {
       border-left: 3px solid #355b82; }
   .contact-section__textarea {
+    width: 400px;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #ffffff;
-    background-color: #00c4c4;
-    border: 3px solid transform;
+    background-color: rgba(0, 196, 196, 0.5);
+    border: none;
+    border-left: 3px solid transform;
     -webkit-transition: all .4 ease;
     -o-transition: all .4 ease;
     transition: all .4 ease;
     outline: none;
     display: block;
     padding-top: 15px;
-    padding-left: 15px;
-    opacity: .5; }
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px; }
     .contact-section__textarea::-webkit-input-placeholder {
       color: #ffffff; }
     .contact-section__textarea:-ms-input-placeholder {
@@ -1203,7 +1222,7 @@ th {
       color: #ffffff; }
     .contact-section__textarea::placeholder {
       color: #ffffff; }
-    .contact-section__textarea:hover {
+    .contact-section__textarea:focus {
       border-left: 3px solid #355b82; }
   .contact-section__info {
     margin-top: 50px;
@@ -1211,17 +1230,165 @@ th {
     margin-left: 172px;
     display: inline-block; }
   .contact-section__info-titles {
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
     color: #262626;
-    text-align: left;
-    margin: 0; }
-  .contact-section__info-text {
-    font-family: sans-serif;
+    font-family: 'ralewaybold';
     font-size: 17px;
-    color: #262626;
     text-align: left;
+    margin-top: 15px;
     margin-bottom: 5px; }
+  .contact-section__info-text {
+    color: #262626;
+    font-size: 17px;
+    font-family: 'ralewaylight';
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 1024px) {
+  .contact-section {
+    width: 100%;
+    background-image: url(../images/contachbg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .contact-section__details-title {
+      font-family: 'ralewaybold';
+      font-size: 90px;
+      color: #262626;
+      text-align: center;
+      padding-top: 99px;
+      margin: 0 auto;
+      display: block; }
+    .contact-section__details-text {
+      margin: 0 auto;
+      width: 390px;
+      font-family: 'ralewaylight';
+      line-height: 25px;
+      font-size: 17px;
+      color: #262626;
+      text-align: center; }
+    .contact-section__form {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      margin-right: 50px;
+      margin-left: 70px;
+      display: inline-block; }
+    .contact-section__name-input {
+      width: 400px;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      background-color: #00c4c4;
+      border: none;
+      border-left: 3px solid transform;
+      outline: none;
+      display: block;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .contact-section__name-input::-webkit-input-placeholder {
+        color: #ffffff; }
+      .contact-section__name-input:-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__name-input::-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__name-input::placeholder {
+        color: #ffffff; }
+      .contact-section__name-input:focus {
+        border-left: 3px solid #355b82; }
+    .contact-section__email-input {
+      width: 400px;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      background-color: rgba(0, 196, 196, 0.5);
+      border: none;
+      border-left: 3px solid transform;
+      outline: none;
+      display: block;
+      padding-right: 15px;
+      padding-left: 15px; }
+      .contact-section__email-input::-webkit-input-placeholder {
+        color: #ffffff; }
+      .contact-section__email-input:-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__email-input::-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__email-input::placeholder {
+        color: #ffffff; }
+      .contact-section__email-input:focus {
+        border-left: 3px solid #355b82; }
+    .contact-section__number-input {
+      width: 400px;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      background-color: rgba(0, 196, 196, 0.5);
+      border: none;
+      border-left: 3px solid transform;
+      outline: none;
+      display: block;
+      padding-right: 15px;
+      padding-left: 15px; }
+      .contact-section__number-input::-webkit-input-placeholder {
+        color: #ffffff; }
+      .contact-section__number-input:-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__number-input::-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__number-input::placeholder {
+        color: #ffffff; }
+      .contact-section__number-input:focus {
+        border-left: 3px solid #355b82; }
+    .contact-section__textarea {
+      width: 400px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      color: #ffffff;
+      background-color: rgba(0, 196, 196, 0.5);
+      border: none;
+      border-left: 3px solid transform;
+      -webkit-transition: all .4 ease;
+      -o-transition: all .4 ease;
+      transition: all .4 ease;
+      outline: none;
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-right: 15px;
+      padding-left: 15px; }
+      .contact-section__textarea::-webkit-input-placeholder {
+        color: #ffffff; }
+      .contact-section__textarea:-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__textarea::-ms-input-placeholder {
+        color: #ffffff; }
+      .contact-section__textarea::placeholder {
+        color: #ffffff; }
+      .contact-section__textarea:focus {
+        border-left: 3px solid #355b82; }
+    .contact-section__info {
+      margin-top: 50px;
+      padding-top: 0;
+      margin-right: 50px;
+      margin-left: 70px;
+      display: inline-block; }
+    .contact-section__info-titles {
+      color: #262626;
+      font-family: 'ralewaybold';
+      font-size: 17px;
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 5px; }
+    .contact-section__info-text {
+      color: #262626;
+      font-size: 17px;
+      font-family: 'ralewaylight';
+      text-align: left;
+      margin-top: 5px;
+      margin-bottom: 5px; } }
 
 .footer-section {
   width: 100%;
@@ -1235,23 +1402,26 @@ th {
     justify-content: space-between; }
   .footer-section__flex-container-copyright {
     width: 271px;
-    height: 45px; }
+    height: 45px;
+    margin-left: 70px; }
   .footer-section__flex-container-logo {
     width: 45px;
-    height: 45px; }
+    height: auto; }
   .footer-section__flex-container-madewithlove {
     width: 271px;
-    height: 45px; }
+    height: 45px;
+    margin-left: 160px; }
   .footer-section__paragraph {
     color: #4d4d4d;
-    font-family: sans-serif;
+    font-family: 'ralewaylight';
     font-size: 16px; }
   .footer-section__text {
     color: #4d4d4d;
-    font-family: sans-serif;
+    font-family: 'ralewaylight';
     font-size: 16px; }
   .footer-section__img {
     width: 100%;
+    height: auto;
     margin-top: 15px; }
   .footer-section__span {
     color: #ff2b58;

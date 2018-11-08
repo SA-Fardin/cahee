@@ -8,27 +8,30 @@
     &__flex-container-copyright {
     	width: 271px;
     	height: 45px;
+        margin-left: 70px;
     }
     &__flex-container-logo {
     	width: 45px;
-    	height: 45px;
+    	height: auto;
     }
     &__flex-container-madewithlove {
     	width: 271px;
     	height: 45px;
+        margin-left: 160px;
     }
     &__paragraph {
     	color: #4d4d4d;
-    	font-family: sans-serif;
+        font-family: 'ralewaylight';
     	font-size: 16px;
     }
     &__text {
        color: #4d4d4d;
-       font-family: sans-serif;
+       font-family: 'ralewaylight';
        font-size: 16px;
     }
     &__img {
     	width: 100%;
+        height: auto;
     	margin-top: 15px;
     }
     &__span {

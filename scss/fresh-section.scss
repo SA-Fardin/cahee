@@ -12,7 +12,10 @@
         align-items: center;
         margin-top: 48px;
     }
-    &__menu-logo {}
+    &__menu-logo {
+        width: 127px;
+        height: auto;
+    }
     &__menu-nav-link {
         color: #262626;
         font-size: 16px;
@@ -38,6 +41,7 @@
         width: 370px;
         color: #262626;
         font-size: 17px;
+        line-height: 25px;
         font-family: 'ralewaylight';
         margin-bottom: 15px;
     }
