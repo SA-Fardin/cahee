@@ -1,110 +1,147 @@
 .service-section {
-    width: 1200px;
-    height: 790px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    background-image: url(../images/servicebg.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #70bfff;
+    padding-top: 120px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
     &__details {
-    	display: inline-block;
-    	margin-top: 120px;
+        display: flex;
+        flex-basis: 100%;
+        max-width: cacl(1200px - 405px);
+        flex-direction: column;
+        padding-top: 90px;
     }
     &__details-first-box {
-    	width: 500px;
-    	height: 97px;
-    	position: relative;
-    	background: url(../images/shopingicon.png) #ffffff;
-    	background-size: content;
-    	background-repeat: no-repeat;
-    	background-position: 93%;
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 79%;
-    		width: 1px;
-    		background-color: #262626;
-    	}
+        width: 404px;
+        height: 97px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        position: relative;
+        background: url(../images/shopingicon.png) #ffffff;
+        background-size: content;
+        background-repeat: no-repeat;
+        background-position: 93%;
+        -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 75%;
+            width: 1px;
+            background-color: #262626;
+        }
     }
     &__details-second-box {
-    	width: 500px;
-    	height: 97px;
-    	position: relative;
-    	background: url(../images/produckicon.png) #ffffff;
-    	background-size: content;
-    	background-repeat: no-repeat;
-    	background-position: 93%;
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 79%;
-    		width: 1px;
-    		background-color: #262626;
-    	}
+        width: 404px;
+        height: 97px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        position: relative;
+        background: url(../images/produckicon.png) #ffffff;
+        background-size: content;
+        background-repeat: no-repeat;
+        background-position: 93%;
+        -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 75%;
+            width: 1px;
+            background-color: #262626;
+        }
     }
     &__details-third-box {
-    	width: 500px;
-    	height: 97px;
-    	position: relative;
-    	background: url(../images/delivericon.png) #ffffff;
-    	background-size: content;
-    	background-repeat: no-repeat;
-    	background-position: 93%;
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 79%;
-    		width: 1px;
-    		background-color: #262626;
-    	}
+        width: 404px;
+        height: 97px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        position: relative;
+        background: url(../images/delivericon.png) #ffffff;
+        background-size: content;
+        background-repeat: no-repeat;
+        background-position: 93%;
+        -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 75%;
+            width: 1px;
+            background-color: #262626;
+        }
     }
     &__details-forth-box {
-    	width: 500px;
-    	height: 97px;
-    	position: relative;
-    	background: url(../images/wellicon.png) #ffffff;
-    	background-size: content;
-    	background-repeat: no-repeat;
-    	background-position: 93%;
-    	&::after {
-    		content: "";
-    		position: absolute;
-    		top: 0;
-    		bottom: 0;
-    		left: 79%;
-    		width: 1px;
-    		background-color: #262626;
-    	}
+        width: 404px;
+        height: 97px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+        position: relative;
+        background: url(../images/wellicon.png) #ffffff;
+        background-size: content;
+        background-repeat: no-repeat;
+        background-position: 93%;
+        -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 75%;
+            width: 1px;
+            background-color: #262626;
+        }
     }
     &__text {
-    	color: #262626;
-    	font-size: 20px;
-    	font-family: sans-serif;
-    	padding-top: 35px;
-    	margin-right: 100px;
-    	margin-left: 0;
-    	text-align: center;
-    	&:hover {
-    		color: #ff6033;
-    		cursor: pointer;
-    	}
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #262626;
+        flex-basis: 100%;
+        max-width: 247px;
+        font-size: 20px;
+        font-family: 'ralewaybold';
+        margin-left: 32px;
+        text-align: center;
+        &:hover {
+            color: #ff6033;
+            cursor: pointer;
+        }
     }
     &__heading-box {
-    	width: 500px;
-    	height: 96px;
-    	display: inline-block;
-    	transform: translate(50%, -220px);
+        display: flex;
+        flex-basis: 100%;
+        max-width: cacl(1200px - 540px);
+        height: 550px;
+        justify-content: center;
+        align-content: center;
+        background: url(../images/servicete-textbg.png);
+        background-position: center;
+        background-size: 450px;
+        background-repeat: no-repeat;
     }
     &__heading-box-h-two {
-    	color: #ffffff;
-    	font-family: 'Raleway', sans-serif;
-    	font-size: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-family: 'ralewaybold';
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 }

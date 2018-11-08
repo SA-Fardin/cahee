@@ -1,52 +1,62 @@
 .subscribe-section {
-    width: 1200px;
-    height: 500px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    width: 100%;
     background-image: url(../images/subscribebg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 58px;
+    padding-bottom: 160px;
+    padding-right: 50px;
+    padding-left: 50px;
     &__ditails {
-    	width: 570px;
-    	height: 130px;
-    	margin-top: 140px;
+        width: 570px;
+        height: 130px;
+        margin-top: 140px;
     }
     &__ditails-h-two {
-    	color: #262626;
-    	font-size: 40px;
-    	font-family: 'Raleway', sans-serif;
+        color: #262626;
+        font-size: 40px;
+        font-family: 'ralewaybold';
     }
     &__ditails-paragraph {
-    	color: #262626;
-    	font-size: 17px;
-    	font-family: 'Raleway', sans-serif;
+        color: #262626;
+        font-size: 17px;
+        font-family: 'ralewaylight';
     }
-    &__form {
-    	
+    &__form{   
     }
+    
     &__email-input {
-    	width: 570px;
-    	height: 55px;
-    	outline: none;
-    	margin-top: 31px;
-    	padding-left: 15px;
-    	border: 1px solid #262626;
-    	margin-right: 15px;
+        width: 570px;
+        height: 55px;
+        color: #262626;
+        font-family: 'ralewaylight';
+        outline: none;
+        margin-top: 31px;
+        padding-left: 15px;
+        border: 1px solid #262626;
+        margin-right: 15px;
+        &::placeholder {
+            color: #262626;
+        font-family: 'ralewaylight';
+    }
     }
     &__submit-input {
-    	width: 170px;
-    	height: 55px;
-    	color: #ffffff;
-    	background: #96b92c;
-    	font-size: 20px;
-    	font-family: 'Raleway', sans-serif;
-    	outline: none;
-    	border: none;
-    	&:hover {
-    		color: #96b92c;
-    		background: transparent;
-    		border: 2px solid #96b92c;
-    	}
+        width: 170px;
+        height: 55px;
+        color: #ffffff;
+        background: #96b92c;
+        font-size: 20px;
+        font-family: 'ralewaylight';
+        -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+        outline: none;
+        border: none;
+        &:hover {
+            color: #96b92c;
+            background: transparent;
+            border: 2px solid #96b92c;
+        }
     }
 }
