@@ -8,10 +8,15 @@
     padding-bottom: 70px;
     padding-right: 50px;
     padding-left: 50px;
+    &__fg-big-box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
     &__details {
         display: flex;
         width: 100%;
-    	max-width: cacl(1200px - 500px);
+        max-width: cacl(1200px - 500px);
         flex-direction: column;
         margin-left: 30px;
     }
@@ -22,21 +27,85 @@
         margin-right: 30px;
     }
     &__img-fruits {
-        width: 100%; 
+        width: 100%;
         height: auto;
     }
     &__details-h-two {
-    	color: #ffffff;
-    	font-family: 'ralewaybold';
-    	font-size: 90px;
-    	margin-bottom: 5px;
+        color: #ffffff;
+        font-family: 'ralewaybold';
+        font-size: 90px;
+        margin-bottom: 5px;
         text-align: left;
     }
     &__details-paragraph {
-    	color: #ffffff;
-    	font-family: 'ralewaylight';
+        color: #ffffff;
+        font-family: 'ralewaylight';
         text-align: left;
         line-height: 25px;
-    	font-size: 17px;
+        font-size: 17px;
+    }
+}
+// Media Queries
+// tablets
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 50px;
+        padding-left: 50px;
+        &__div-for-image {
+            width: 50%;
+            height: auto;
+            margin: 0 18%;
+            position: absolute;
+            opacity: .5;
+        }
+        &__img-fruits {
+            width: 100%;
+            height: 100%;
+        }
+        &__details {
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+        }
+        &__details-h-two {
+            margin: 0;
+            margin-top: 15px;
+            padding: 0;
+            text-align: center;
+        }
+        &__details-paragraph {
+            text-align: center;
+        }
+    }
+}
+// mobiles
+@media screen and (max-width: 480px) {
+    .about-section {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        &__details-h-two {
+            font-size: 40px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        &__details-paragraph {
+            text-align: center;
+            font-size: 15px;
+        }
+        &__div-for-image {
+            display: inline-block;
+            width: 25%;
+            margin-top: 0;
+            margin-right: 30px;
+            margin-left: 151px;
+        }
+        &__img-fruits {
+            width: 100%;
+            height: auto;
+        }
     }
 }

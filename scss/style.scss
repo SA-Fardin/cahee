@@ -1,7 +1,6 @@
 *, *:before, *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 @import 'normalize';
 @import 'fresh-section';
 @import 'about-section';
@@ -11,50 +10,85 @@
 @import 'blog-section';
 @import 'contact-section';
 @import 'footer-section';
-
 @font-face {
     font-family: 'ralewaybold';
-    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'), url('../fonts/raleway-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'ralewayextrabold';
-    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-extrabold-webfont.woff') format('woff');
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'), url('../fonts/raleway-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 @font-face {
     font-family: 'ralewaylight';
-    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-light-webfont.woff') format('woff');
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'), url('../fonts/raleway-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
+.fresh-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.about-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.service-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.gallery-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.subscribe-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.blog-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.contact-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
+.footer-section__container {
+    width: 100%;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px;
+}
 .flex-container {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
-
-.container {
-    width: 100%;
-    max-width: 1149px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 15px;
-}
-
-.fg-big-box {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+@-ms-viewport {
+    width: device-width;
 }

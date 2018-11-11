@@ -26,11 +26,10 @@
         margin-top: 17px;
         font-family: 'ralewaylight';
     }
-    &__form{ 
-    margin-top: 15px;
-    margin-bottom: 17px;  
+    &__form {
+        margin-top: 15px;
+        margin-bottom: 17px;
     }
-    
     &__email-input {
         width: 570px;
         height: 55px;
@@ -42,8 +41,8 @@
         margin-right: 15px;
         &::placeholder {
             color: #262626;
-        font-family: 'ralewaylight';
-    }
+            font-family: 'ralewaylight';
+        }
     }
     &__submit-input {
         width: 170px;
@@ -63,4 +62,20 @@
             border: 2px solid #96b92c;
         }
     }
+}
+// Media Queries
+// tablets
+@media screen and (max-width: 768px) {
+   .subscribe-section {
+    &__submit-input {
+       margin-top: 15px; 
+       display: block;
+    }
+   } 
+}
+// mobiles
+@media screen and (max-width: 480px) {
+   .subscribe-section {
+    
+   } 
 }

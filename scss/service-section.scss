@@ -1,21 +1,28 @@
 .service-section {
     width: 100%;
     background-color: #70bfff;
-    padding-top: 120px;
     padding-top: 50px;
     padding-bottom: 100px;
     padding-right: 50px;
     padding-left: 50px;
+    &__fg-big-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
     &__details {
         display: flex;
+        justify-content: center;
         flex-basis: 100%;
-        max-width: cacl(1200px - 405px);
+        max-width: 405px;
         flex-direction: column;
         padding-top: 90px;
     }
     &__details-first-box {
         width: 404px;
         height: 97px;
+        margin: 0 auto;
         margin-top: 9px;
         margin-bottom: 9px;
         position: relative;
@@ -39,6 +46,7 @@
     &__details-second-box {
         width: 404px;
         height: 97px;
+        margin: 0 auto;
         margin-top: 9px;
         margin-bottom: 9px;
         position: relative;
@@ -62,6 +70,7 @@
     &__details-third-box {
         width: 404px;
         height: 97px;
+        margin: 0 auto;
         margin-top: 9px;
         margin-bottom: 9px;
         position: relative;
@@ -85,6 +94,7 @@
     &__details-forth-box {
         width: 404px;
         height: 97px;
+        margin: 0 auto;
         margin-top: 9px;
         margin-bottom: 9px;
         position: relative;
@@ -124,7 +134,7 @@
     &__heading-box {
         display: flex;
         flex-basis: 100%;
-        max-width: cacl(1200px - 540px);
+        max-width: 540px;
         height: 550px;
         justify-content: center;
         align-content: center;
@@ -143,5 +153,83 @@
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+}
+// Media Queries
+// tablets
+@media screen and (max-width: 768px) {
+    .service-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px;
+        margin: 0;
+        &__fg-big-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &__details {
+            width: 100%;
+            flex-grow: 1;
+            order: 2;
+            padding-top: 10px;
+        }
+        &__heading-box {
+            height: 120px;
+            background: url(../images/servicete-textbg.png);
+            background-position: center;
+            background-size: 100px;
+            background-repeat: no-repeat;
+        }
+        &__heading-box-h-two {}
+    }
+}
+// mobiles
+@media screen and (max-width: 480px) {
+    .service-section {
+        padding-top: 35px;
+        padding-bottom:  35px;
+        padding-right: 15px;
+        padding-left: 15px;
+        &__heading-box {
+            background: url(../images/servicete-textbg.png);
+            background-position: center;
+            background-size: 90px;
+            background-repeat: no-repeat;
+        }
+        &__heading-box-h-two {
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        &__details-first-box {
+            width: 260px;
+            height: 70px;
+            background-position: 97%;
+        }
+        &__details-second-box {
+            width: 260px;
+            height: 70px;
+            background-position: 97%;
+        }
+        &__details-third-box {
+            width: 260px;
+            height: 70px;
+            background-position: 97%;
+        }
+        &__details-forth-box {
+            width: 260px;
+            height: 70px;
+            background-position: 97%;
+        }
+        &__text {
+            width: 70%;
+            font-size: 15px;
+            margin-left: 5px;
+            text-align: center;
+        }
     }
 }

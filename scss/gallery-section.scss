@@ -6,8 +6,7 @@
     padding-right: 50px;
     padding-left: 50px;
     &__details {
-        width: 630px;
-        height: 229px;
+        width: 100%;
         margin: 0 auto;
     }
     &__details-h-two {
@@ -26,19 +25,14 @@
     }
     &__flex-container {
         display: flex;
-        flex-basis: 100%;
-        max-width: 1170px;
         flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
     }
     &__flex-container-first-box {
         display: flex;
-        flex-basis: 100%;
-        max-width: 585px;
-        height: 552px;
-        background-image: url(../images/gallerpeaches.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        width: 55%;
+        height: auto;
         margin: 15px;
         -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
@@ -47,61 +41,46 @@
     &__flex-container-second-box {
         display: flex;
         flex-wrap: wrap;
-        flex-basis: 370px;
-        max-width: cacl(1170px - 370px);
-        height: 552px;
+        width: 37%;
+        height: auto;
         margin: 15px;
         &--first-square {
-            flex-basis: 370px;
-            height: 262px;
+            flex-basis: 100%;            
+            height: auto;
             margin-bottom: 15px;
-            background-image: url(../images/gallarybaries.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
             -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
             box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         }
         &--second-square {
-            flex-basis: 370px;
+            flex-basis: 100%;
             height: 262px;
             margin-top: 15px;
-            background-image: url(../images/gallery-toot.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
             -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
             box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         }
     }
     &__flex-container-third-box {
-        width: 100%;
-        max-width: 450px;
-        height: 401px;
+        width: 46%;
+        height: auto;
         margin-right: 15px;
-        background-image: url(../images/gallery-glass.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         margin: 15px;
         -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
     }
     &__flex-container-forth-box {
-        flex-basis: 100%;
-        max-width: 505px;
-        height: 401px;
+        width: 46%;
+        height: auto;
         margin: 15px;
-        background-image: url(../images/gallery-orange.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
         -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
         box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
+    }
+    &__images {
+        width: 100%;
+        height: 100%;
     }
     &__div-for-button {
         width: 200px;
@@ -128,61 +107,50 @@
         }
     }
 }
-@media only screen and (min-device-width: 360px) and (max-device-width: 1024px) {
-    .gallery-section {
-        &__flex-container-first-box {
-            display: flex;
-            flex-basis: 100%;
-            max-width: 420px;
-            background-image: url(../images/gallerpeaches.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin: 15px;
+
+// Media Queries
+// tablets
+@media screen and (max-width: 768px) {
+ .gallery-section {
+    &__flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        max-width: 1170px;
+        justify-content: center;
+    }
+    &__flex-container-first-box {
+        display: flex;
+        width: 55%;
+        margin: 15px; 
         }
         &__flex-container-second-box {
-            display: flex;
-            flex-wrap: wrap;
+        display: flex;
+        width: 35%;
+        margin: 15px;
+        &--first-square {
             flex-basis: 100%;
-            max-width: 370px;
-            height: 552px;
-            margin: 15px;
-            &--first-square {
-                flex-basis: 370px;
-                height: 262px;
-                margin-bottom: 15px;
-                background-image: url(../images/gallarybaries.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-            &--second-square {
-                flex-basis: 370px;
-                height: 262px;
-                margin-top: 15px;
-                background-image: url(../images/gallery-toot.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
+            height: 262px;
+            margin-bottom: 15px;
         }
-        &__flex-container-third-box {
-            width: 100%;
-            max-width: 350px;
-            background-image: url(../images/gallery-glass.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            margin: 15px;
-        }
-        &__flex-container-forth-box {
+        &--second-square {
             flex-basis: 100%;
-            max-width: 440px;
-            margin: 15px;
-            background-image: url(../images/gallery-orange.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+            height: 262px;
+            margin-top: 15px;
         }
     }
+    &__flex-container-third-box {
+        width: 45%;
+        height: 401px;
+        margin-right: 15px;
+        margin: 15px;
+    }
+    &__flex-container-forth-box {
+        width: 45%;
+        height: 401px;
+        margin: 15px;
+    }
+ }  
 }
+// mobiles
+@media screen and (max-width: 480px) {}

@@ -65,7 +65,125 @@
             border: 2px solid #ff6033;
         }
     }
+    &__input {
+        display: none;
+    }
+    &__label {
+        display: none;
+    }
 }
 .active {
     border-top: 3px solid #ff6033;
+}
+// Media Queries
+// tablets
+@media screen and (max-width: 768px) {
+    .fresh-section {
+        &__details {
+            margin-top: 90px;
+        }
+        &__details-button {
+            margin-top: 15px;
+            margin-bottom: 150px;
+            &:hover {
+                border: none;
+            }
+            &:focus {
+                color: #ff6033;
+                background-color: transparent;
+                border: 2px solid #ff6033;
+            }
+        }
+        &__input {
+            display: none;
+        }
+        &__label {
+            display: none;
+        }
+    }
+}
+// mobiles
+@media screen and (max-width: 480px) {
+    .fresh-section {
+        padding-right: 15px;
+        padding-left: 15px;
+        &__menu {
+            display: block;
+            align-items: left;
+            margin-top: 10px;
+        }
+        &__menu-logo {
+            width: 50%;
+            height: auto;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            margin: 0 auto;
+        }
+        &__label {
+            display: block;
+            float: right;
+            &--img {
+                width: 100%;
+            }
+        }
+        &__input {
+            display: none;
+        }
+        &__menu-nav {
+            width: 100%;
+            display: none;
+            margin-top: 25px;
+        }
+        &__menu-nav-link {
+            border: none;
+            border-bottom: 2px solid #ff6033;
+            line-height: 25px;
+            &:hover {
+                border-top: none;
+            }
+            &:focus {
+                color: #ff6033;
+                border-top: none;
+                cursor: pointer;
+            }
+        }
+        &__input:checked+&__menu-nav {
+            display: flex;
+            flex-direction: column;
+        }
+        &__details {
+            margin-top: 45px;
+        }
+        &__details-h-two {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        &__details-paragraph {
+            width: 100%;
+            color: #262626;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        &__details-button {
+            width: 130px;
+            height: 50px;
+            font-size: 15px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            &:hover {
+                border: none;
+            }
+            &:focus {
+                color: #ff6033;
+                background-color: transparent;
+                border: 2px solid #ff6033;
+            }
+        }
+    }
+    .active {
+        border-top: none;
+    }
 }
