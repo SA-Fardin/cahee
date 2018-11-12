@@ -53,7 +53,7 @@
         font-family: 'ralewaylight';
         font-size: 20px;
         margin-top: 15px;
-        margin-bottom: 400px;
+        margin-bottom: 250px;
         outline: none;
         border: none;
         -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
@@ -82,8 +82,11 @@
         &__details {
             margin-top: 90px;
         }
+        &__details-paragraph {
+        margin-bottom: 0;
+    }
         &__details-button {
-            margin-top: 15px;
+            margin-top: 25px;
             margin-bottom: 150px;
             &:hover {
                 border: none;
@@ -157,7 +160,7 @@
         }
         &__details-h-two {
             text-align: center;
-            font-size: 40px;
+            font-size: 2em;
             margin-bottom: 5px;
         }
         &__details-paragraph {

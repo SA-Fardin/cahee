@@ -45,7 +45,7 @@
         height: auto;
         margin: 15px;
         &--first-square {
-            flex-basis: 100%;            
+            flex-basis: 100%;
             height: auto;
             margin-bottom: 15px;
             -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
@@ -86,6 +86,7 @@
         width: 200px;
         height: 56px;
         margin: 0 auto;
+        margin-top: 25px;
     }
     &__button {
         width: 200px;
@@ -94,7 +95,6 @@
         background-color: #5585a2;
         font-family: 'ralewaylight';
         font-size: 20px;
-        margin-top: 50px;
         border: none;
         outline: none;
         -webkit-box-shadow: 1px 2px 24px -3px rgba(0, 0, 0, 0.75);
@@ -107,50 +107,131 @@
         }
     }
 }
-
 // Media Queries
 // tablets
 @media screen and (max-width: 768px) {
- .gallery-section {
-    &__flex-container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-        max-width: 1170px;
-        justify-content: center;
-    }
-    &__flex-container-first-box {
-        display: flex;
-        width: 55%;
-        margin: 15px; 
+    .gallery-section {
+        &__flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-basis: 100%;
+            max-width: 1170px;
+            justify-content: center;
+        }
+        &__flex-container-first-box {
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 15px;
         }
         &__flex-container-second-box {
-        display: flex;
-        width: 35%;
-        margin: 15px;
-        &--first-square {
-            flex-basis: 100%;
-            height: 262px;
-            margin-bottom: 15px;
+            display: flex;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 15px;
+            &--first-square {
+                flex-basis: 47.5%;
+                height: auto;
+                margin: 0;
+                margin-right: 15px;
+            }
+            &--second-square {
+                flex-basis: 47.5%;
+                height: auto;
+                margin: 0;
+                margin-left: 15px;
+            }
         }
-        &--second-square {
-            flex-basis: 100%;
-            height: 262px;
-            margin-top: 15px;
+        &__flex-container-third-box {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 15px;
+        }
+        &__flex-container-forth-box {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 15px;
         }
     }
-    &__flex-container-third-box {
-        width: 45%;
-        height: 401px;
-        margin-right: 15px;
-        margin: 15px;
-    }
-    &__flex-container-forth-box {
-        width: 45%;
-        height: 401px;
-        margin: 15px;
-    }
- }  
 }
 // mobiles
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    .gallery-section {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-right: 15px;
+        padding-left: 15px;
+        &__details-h-two {
+            color: #262626;
+            font-family: 'ralewaybold';
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        &__details-paragraph {
+            font-size: 15px;
+            text-align: center;
+        }
+        &__flex-container-first-box {
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__flex-container-second-box {
+            display: flex;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            &--first-square {
+                flex-basis: 100%;
+                height: auto;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            &--second-square {
+                flex-basis: 100%;
+                height: auto;
+                margin: 0;
+                margin-top: 15px;
+            }
+        }
+        &__flex-container-third-box {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__flex-container-forth-box {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &__div-for-button {
+            width: 130px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        &__button {
+            width: 130px;
+            height: 50px;
+            font-size: 15px;
+            margin: 0;
+            border: none;
+            outline: none;
+        }
+    }
+}
